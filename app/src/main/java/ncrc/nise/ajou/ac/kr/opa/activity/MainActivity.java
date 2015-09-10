@@ -29,6 +29,8 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
     private DBAdapter dbAdapter;
     private Cursor c;
 
+    //asdf
+
     // 서비스 재시작 관련
     BroadcastReceiver receiver;  //RestartService 클래스를 메소드화 해서 브로드캐스트를 받을 객체
     Intent intentMyService; //PersistentService 클래스를 담을 변수
