@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ncrc.nise.ajou.ac.kr.opa">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- activity_splash activity -->
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/IntroTheme" />
+
+        <activity
+            android:name=".activity.UserSettingsActivity"
+            android:label="@string/title_activity_user_settings" />
+
+        <service
+            android:name=".activity.PersistentService">
+            <intent-filter>
+                <action android:name="ncrc.nise.ajou.ac.kr.opa.persistent" />
+                <action android:name="ncrc.nise.ajou.ac.kr.opa.step" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

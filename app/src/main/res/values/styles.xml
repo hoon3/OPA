@@ -1,0 +1,28 @@
+<resources>
+    <!-- Intro theme. -->
+    <style name="IntroTheme" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:background">#000</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- <item name="actionBarStyle">@style/MyActionBar</item> -->
+        <item name="colorPrimary">#1DE9B6</item>
+        <item name="android:textColorPrimary">#333</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/activated_background</item>
+    </style>
+
+    <!--
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="titleTextStyle">@style/MyTitleTextStyle</item>
+        <item name="android:actionMenuTextColor">#fff</item>
+    </style>
+
+    <style name="MyTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#fff</item>
+    </style>
+    -->
+</resources>
